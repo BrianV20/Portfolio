@@ -10,14 +10,16 @@ function App() {
 
   //la pagina va a ser blanca con algunos toques naranjas y violetas quizás
   return (
-    <>
-    <NavBar />
-    <AboutMeContainer />
-    <EducationContainer />
-    <ProyectsContainer />
-    <ContactContainer />
-    <Footer />
-    </>
+    <div className='w-full bg-slate-100'>
+      <NavBar />
+      <div className='mx-2 text-[1.15rem] roboto-regular'>
+        <AboutMeContainer />
+        <EducationContainer />
+        <ProyectsContainer />
+        <ContactContainer />
+      </div>
+      <Footer />
+    </div>
   )
 }
 
