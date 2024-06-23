@@ -12,7 +12,7 @@ function App() {
   return (
     <div className='w-full bg-slate-100'>
       <NavBar />
-      <div className='mx-2 text-[1.15rem] roboto-regular'>
+      <div className='mx-2 text-[1.15rem] roboto-regular md:mx-14 lg:mx-[22rem] text-gray-800'>
         <AboutMeContainer />
         <EducationContainer />
         <ProyectsContainer />

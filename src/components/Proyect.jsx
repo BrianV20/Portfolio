@@ -24,7 +24,7 @@ export default function Proyect({ title, description, technologies, finishDate, 
 
     return (
         <div className="px-4 py-6 my-3 bg-white shadow rounded-lg">
-            <p className="text-xl font-bold text-gray-800">{title}</p>
+            <p className="text-xl font-bold text-gray-800 lg:text-2xl">{title}</p>
             <p className="text-gray-600 mt-2">{description}</p>
 
             <div className="flex overflow-hidden relative mt-4">

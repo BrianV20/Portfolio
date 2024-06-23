@@ -4,3 +4,5 @@
 # Hacer deploy de la página de directores de cine jsjs.
 # Usar squosh o esas paginas para comprimir las imagenes. LISTO
 # Fuentes: normal (roboto-regular), titulos (lato-bold), subtitulos (roboto-bold).
+
+Lo que falta: ponerle la función para cambiar de idioma, hacerle los hover, poner una foto mía.
