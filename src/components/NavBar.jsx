@@ -1,19 +1,17 @@
-export default function NavBar() {
+import React from "react";
+import { Link } from "react-scroll";
 
+export default function NavBar() {
     return (
-        <div className="bg-blue-300 py-1 px-5 flex justify-between gap-x-5">
+        <div className="bg-gradient-to-b from-violet-400 to-slate-100 py-2 px-5 flex justify-between items-center gap-x-5">
             <div>
-                <p className="text-xl">Brian Velázquez</p>
+                <p className="text-2xl font-bold text-gray-800 lato-bold">Brian Velázquez</p>
             </div>
-            <div className="flex flex-wrap">
-                <p>About</p>
-                <p className="mx-1">-</p>
-                <p>Education</p>
-                <p className="mx-1">-</p>
-                <p>Proyects</p>
-                <p className="mx-1">-</p>
-                <p>Contact</p>
+            <div className="flex flex-wrap items-center gap-x-4 lato-regular">
+                <Link to="aboutMe" smooth={true} duration={500} className="text-gray-700 hover:text-violet-500 transition-colors cursor-pointer">About Me</Link>
+                <Link to="projects" smooth={true} duration={500} className="text-gray-700 hover:text-violet-500 transition-colors cursor-pointer">Projects</Link>
+                <Link to="contact" smooth={true} duration={500} className="text-gray-700 hover:text-violet-500 transition-colors cursor-pointer">Contact</Link>
             </div>
         </div>
-    )
-};
+    );
+}

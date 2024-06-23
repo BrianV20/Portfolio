@@ -1,9 +1,8 @@
-export default function Footer(){
-
+export default function Footer() {
     return (
-        <div className="bg-blue-800 px-2 py-3">
-            <p>2024</p>
-            <p>Derechos reservados Brian Velázquez</p>
+        <div className="bg-blue-900 px-4 py-5 text-center text-white">
+            <p className="text-lg">2024</p>
+            <p className="text-sm">Derechos reservados (? Brian Velázquez</p>
         </div>
-    )
+    );
 };

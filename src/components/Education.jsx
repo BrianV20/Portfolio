@@ -3,9 +3,15 @@ export default function Education({ title, entity, startDate, finishDate, durati
     return (
         <div>
             {duration != '' ?
-                <p>✔ {title} - {entity}. ({startDate} - {finishDate}, {duration})</p>
+                <div className="flex">
+                    <i className="fa-solid fa-code mr-1 self-center"></i>
+                    <p>{title} - {entity}. ({startDate} - {finishDate}, {duration}).</p>
+                </div>
                 :
-                <p>✔ {title} - {entity}. ({startDate} - {finishDate})</p>
+                <div className="flex">
+                    <i className="fa-solid fa-code mr-1 self-center"></i>
+                    <p>{title} - {entity}. ({startDate} - {finishDate}).</p>
+                </div>
             }
         </div>
     )
