@@ -5,20 +5,23 @@ import EducationContainer from './components/EducationContainer'
 import ProyectsContainer from './components/ProyectsContainer'
 import ContactContainer from './components/ContactContainer'
 import Footer from './components/Footer'
+import { languageContext } from './Contexts'
 
 function App() {
+  const [selectedLanguage, setSelectedLanguage] = useState('spanish');
 
-  //la pagina va a ser blanca con algunos toques naranjas y violetas quizás
   return (
     <div className='w-full bg-slate-100'>
-      <NavBar />
-      <div className='mx-2 text-[1.15rem] roboto-regular md:mx-14 lg:mx-[22rem] text-gray-800'>
-        <AboutMeContainer />
-        <EducationContainer />
-        <ProyectsContainer />
-        <ContactContainer />
-      </div>
-      <Footer />
+      <languageContext.Provider value={{ selectedLanguage, setSelectedLanguage }} >
+        <NavBar />
+        <div className='mx-2 text-[1.15rem] roboto-regular md:mx-14 lg:mx-[22rem] text-gray-800'>
+          <AboutMeContainer />
+          <EducationContainer />
+          <ProyectsContainer />
+          <ContactContainer />
+        </div>
+        <Footer />
+      </languageContext.Provider>
     </div>
   )
 }

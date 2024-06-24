@@ -1,8 +1,8 @@
-# Agregar una función para poder cambiar de español a inglés.
-# Ver como agregar las imágenes de cada proyecto, debería verse como un slideshow, tipo las fotos de instagram. Falta hacerle el estilo nomás.
+# Agregar una función para poder cambiar de español a inglés. Listo.
+# Ver como agregar las imágenes de cada proyecto, debería verse como un slideshow, tipo las fotos de instagram. Falta hacerle el estilo nomás. Listo
 # Agregar lo de lazy load para las imágenes, ver el video ese de youtube.
 # Hacer deploy de la página de directores de cine jsjs.
 # Usar squosh o esas paginas para comprimir las imagenes. LISTO
 # Fuentes: normal (roboto-regular), titulos (lato-bold), subtitulos (roboto-bold).
 
-Lo que falta: ponerle la función para cambiar de idioma, hacerle los hover, poner una foto mía.
+Lo que falta: poner una foto mía, Agregar lo de lazy load para las imágenes, ver el video ese de youtube.
