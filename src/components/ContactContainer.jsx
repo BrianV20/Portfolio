@@ -10,7 +10,7 @@ export default function ContactContainer() {
             <div className="bg-violet-100 rounded-lg px-4 py-2 mb-4" id="contact">
                 <p className="text-xl md:text-2xl text-violet-700 roboto-bold lg:text-3xl">{selectedLanguage == 'spanish' ? 'Contacto' : 'Contact'}</p>
             </div>
-            <div className="p-6 flex flex-col gap-y-3 lg:text-xl lg:flex-row lg:gap-x-4">
+            <div className="p-6 flex flex-col gap-y-3 lg:text-xl xl:flex-row lg:gap-x-4">
                 <div className="border-2 border-purple-500 rounded-lg p-4 flex items-center space-x-2">
                     <i className="fa-solid fa-phone text-purple-600"></i>
                     <p>+54 9 336 457 1481</p>
@@ -29,6 +29,12 @@ export default function ContactContainer() {
                     <i className="fa-brands fa-instagram text-purple-600"></i>
                     <a href="https://www.instagram.com/brianvelazquez827/">
                         <p className="hover:text-violet-600 transition-colors">Instagram</p>
+                    </a>
+                </div>
+                <div className="border-2 border-purple-500 rounded-lg p-4 flex items-center space-x-2">
+                    <i className="fa-brands fa-github text-purple-600"></i>
+                    <a href="https://github.com/BrianV20">
+                        <p className="hover:text-violet-600 transition-colors">Github</p>
                     </a>
                 </div>
             </div>
