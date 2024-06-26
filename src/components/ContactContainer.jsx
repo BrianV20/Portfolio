@@ -8,7 +8,7 @@ export default function ContactContainer() {
         <>
         <div className="mt-8 rounded-lg py-4 px-4 md:px-6 lg:px-8">
             <div className="bg-violet-100 rounded-lg px-4 py-2 mb-4" id="contact">
-                <p className="text-xl md:text-2xl text-violet-700 roboto-bold lg:text-3xl">{languageContext == 'spanish' ? 'Contacto' : 'Contact'}</p>
+                <p className="text-xl md:text-2xl text-violet-700 roboto-bold lg:text-3xl">{selectedLanguage == 'spanish' ? 'Contacto' : 'Contact'}</p>
             </div>
             <div className="p-6 flex flex-col gap-y-3 lg:text-xl lg:flex-row lg:gap-x-4">
                 <div className="border-2 border-purple-500 rounded-lg p-4 flex items-center space-x-2">

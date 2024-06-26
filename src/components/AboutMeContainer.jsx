@@ -1,14 +1,27 @@
-import { useContext } from "react";
+import { useContext, useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import { languageContext } from "../Contexts";
 
 export default function AboutMeContainer() {
     const { selectedLanguage, setSelectedLanguage } = useContext(languageContext);
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    const mobileTabletBreakpoint = 1024;
+
+    useEffect(() => {
+        const handleResize = () => {
+            setWindowWidth(window.innerWidth);
+        };
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        }
+    }, [])
 
     return (
         <div className="flex flex-col items-center justify-center p-6 lg:flex-row" id="aboutMe">
             <div className="mt-5 mb-3 lg:w-[40%]">
-                <img src="./img/epdro.jpg" alt="My picture" className="rounded-full max-h-[18rem] mx-auto border-4 border-violet-500/50 lg:min-h-[30rem] lg:min-w-[20rem] lg:mr-10" />
+                <img src={windowWidth <= mobileTabletBreakpoint ? '/img/fotoMia3.jpg' : '/img/fotoMia.jpg'} alt="My picture" className="rounded-full max-h-[18rem] mx-auto border-4 border-violet-500/50 lg:min-h-[30rem] lg:min-w-[20rem] lg:mr-10" />
             </div>
             <div className="text-center">
                 <p className="text-lg md:text-xl font-semibold text-gray-800 mb-2 lg:text-4xl text-center">
